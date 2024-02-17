@@ -1,0 +1,53 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: #fff;
+    font-family:"Poppins",sans-serif;
+}
+body{
+    background-color: #000;
+}
+header{
+    display: flex;
+}
+header nav .dateTime {
+    margin-left: 1100px;
+    height: 60px;
+    width: 220px;
+    background-color: #fff;
+    border-radius: 30px;
+    display: flex;
+}
+.Date p{
+    color: rgba(85, 85, 85, 1);
+    padding-left: 20px;
+   
+}
+.Date{
+    border-right: 1px solid #000;
+    width: 50%;
+    height: 60px;
+}
+#date{
+    padding-top: 10px;
+}
+.Time{
+    width: 40%;
+    height: 60px;
+}
+.Time p{
+    color: rgba(85, 85, 85, 1);
+    padding-left: 20px;
+}
+#notification{
+    padding-top: 10px;
+    padding-left: 40px;
+}
+#day{
+    padding-top: 5px;
+    padding-left: 25px;
+}
+#time{
+    padding-top: 5px;
+}
