@@ -118,6 +118,24 @@ section .right .task p{
     padding-top: 10px;
     font-family: "Poppins",sans-serif;
 }
+section .right .task .tasks{
+    padding-top: 10px;
+}
+section .right .task .tasks .input input{
+    color: #555;
+    border-radius: 9px;
+    margin-left: 15px;
+}
+section .right .task .tasks .input button{
+    color: #555;
+    width: 40px;
+    border-radius: 9px;
+    box-shadow: 2px 2px 9px 1px #686060;
+}
+section .right .task .tasks .output ul{
+    padding-top: 15px;
+    padding-left: 40px;
+}
 footer{
     display: flex;
 }
