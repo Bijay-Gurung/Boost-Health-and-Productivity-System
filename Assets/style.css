@@ -19,6 +19,7 @@ header nav .dateTime {
     background-color: #fff;
     border-radius: 30px;
     display: flex;
+    box-shadow: 2px 2px 9px 1px #686060;
 }
 header h2{
     font-weight: 100;
@@ -75,7 +76,7 @@ section .left .goals{
 section .left .goals img{
     z-index: -1;
     position: relative;
-    left: 70px;
+    left: 150px;
     bottom: 30px;
 }
 section .left .goals button{
@@ -85,6 +86,7 @@ section .left .goals button{
     background-color: #000;
     box-shadow: 2px 2px 9px 1px #686060;
     position: relative;
+    left: 21px;
     bottom: 140px;
     right: 50px;
     z-index: -1;
@@ -93,15 +95,28 @@ section .left .goals button i{
     padding-left: 5px;
 }
 section .mid h1{
-    padding-left: 120px;
+    padding-left: 170px;
     font-family: "Poppins",sans-serif;
     font-size: xx-large;
 }
 section .mid img{
     position: relative;
-    left: 110px;
+    left: 150px;
     bottom: 40px;
     z-index: -1;
+}
+section .right .task{
+    margin-top: 20px;
+    margin-left: 20%;
+    height: 300px;
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 9px 1px #686060;
+}
+section .right .task p{
+    text-align: center;
+    padding-top: 10px;
+    font-family: "Poppins",sans-serif;
 }
 footer{
     display: flex;
@@ -114,6 +129,7 @@ footer .box{
     margin-left: 60px;
     position: relative;
     left: 20%;
+    top: 50px;
 }
 footer .fitness{
     background-image: url(/Images/Background/Fitness.jpg);
