@@ -21,6 +21,7 @@ setInterval(changingText,2000);
 let day = document.getElementById("day");
 let date = document.getElementById("date");
 let time = document.getElementById("time");
+let session = document.getElementById("session");
 
 let Day = new Date().getDay();
 switch(Day){
@@ -54,8 +55,21 @@ let year = new Date().getFullYear();
 date.innerHTML = month+1 +'/'+dayOfMonth+'/'+year;
 
 // for Time
-let hrs = new Date().getHours();
-let min = new Date().getMinutes();
-let sec = new Date().getSeconds();
+function displayTime(){
+    let hrs = new Date().getHours();
+    let min = new Date().getMinutes();
+    let sec = new Date().getSeconds();
 
-time.innerHTML = hrs+':'+min+':'+sec+'am';
+    if(hrs>12){
+        hrs = hrs-12;
+        session.innerHTML = "Pm";
+    }else{
+        session.innerHTML = "Am";
+    }
+    if(hrs==0){
+        hrs = 12;
+    }
+    time.innerHTML = hrs+':'+min+':'+sec+' '+session.innerHTML;
+}
+setInterval(displayTime,10);
+
