@@ -89,7 +89,6 @@ section .left .goals button{
     left: 21px;
     bottom: 140px;
     right: 50px;
-    z-index: -1;
 }
 section .left .goals button i{
     padding-left: 5px;

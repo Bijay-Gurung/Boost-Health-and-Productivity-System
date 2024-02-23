@@ -27,12 +27,12 @@
         <div class="left">
             <div class="goals">
                 <img src="/Images/img/solo.jpg" width="100px" height="200px">
-                <button>Goals<i class="fa-solid fa-bullseye" style="color: #ffffff;"></i></button>
+                <button onclick="myGoals()">Goals<i class="fa-solid fa-bullseye" style="color: #ffffff;"></i></button>
             </div>
         </div>
 
         <div class="mid">
-            <h1>Hi! Bijay,<br> Welcome Back |</h1>
+            <h1>Hi! Bijay,<br><span id="changeText">Welcome Back</span></h1>
             <div class="gif">
                 <img src="/Images/GIf/Books.gif" height="200px" width="250px">
             </div>
@@ -43,7 +43,7 @@
                 <div class="tasks">
                     <div class="input">
                         <input type="text" placeholder="search" id="text" name="textField">
-                        <button>Add</button>
+                        <button onclick="myTasks()">Add</button>
                     </div>
                     <div class="output">
                         <ul>
@@ -63,5 +63,7 @@
         <div class="box tracking"></div>
     </footer>
     <script src="https://kit.fontawesome.com/4f9d824da5.js" crossorigin="anonymous"></script>
+    <script src="/Assets/script.js"></script>
+    <script src="/Assets/taskManager.js"></script>
 </body>
 </html>
