@@ -19,6 +19,9 @@ header nav .dateTime {
     border-radius: 30px;
     display: flex;
 }
+header h2{
+    font-weight: 100;
+}
 .Date p{
     color: rgba(85, 85, 85, 1);
     padding-left: 20px;
