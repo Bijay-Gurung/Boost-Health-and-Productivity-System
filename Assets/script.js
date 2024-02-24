@@ -60,7 +60,7 @@ function displayTime(){
 
     // To change Text
     let text1 = document.getElementById("change");
-    if(hrs<=5 && hrs<=11 && session.innerHTML === "Am"){
+    if(hrs>=5 && hrs<=11 && session.innerHTML === "Am"){
         text1.innerHTML = "Good Morning";
     }
     else if(hrs>=0 && hrs<=3 && session.innerHTML === "Pm"){
