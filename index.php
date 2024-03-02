@@ -1,5 +1,32 @@
 <?php
+//Database Configuration
+$db_host = 'localhost';
+$db_username = 'root';
+$db_pass = '';
+$db_name = 'taskmanager';
 
+//Database Connection
+$db = new mysqli($db_host,$db_username,$db_pass,$db_name);
+
+//Check Connection
+if($db->connect_error){
+    die("Connection failed" .$db->connect_error);
+}
+
+//Inserting tasks into database
+if($_SERVER["REQUEST_METHOD"] === "POST"){
+    $task = $_POST["task"];
+}
+
+//Prepare and bind the statement to prevent SQL injection
+$stmt = $db->prepare("INSERT INTO tasks (task) values (?)");
+$stmt->bind_param('s',$task);
+
+if($stmt->execute()){
+    echo"<script>alert('Task Added Successfully');</script>";
+}else{
+    echo"<script>alert('Connection failed' ".$db->error."');</script>";
+}
 ?>
 
 <!DOCTYPE html>
@@ -50,7 +77,7 @@
                     echo"<div class='input'>";
                         echo"<form method='POST' action='index.php'>";
                             echo"<input type='text' placeholder='search' id='task' name='task'>";
-                            echo"<button id='btn' name='btn'>Add</button>";
+                            echo"<input type='submit' id='submit' name='submit'>";
                         echo"</form>";
 
                     echo"</div>";

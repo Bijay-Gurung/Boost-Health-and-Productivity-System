@@ -126,7 +126,7 @@ section .right .task .tasks .input input{
     border-radius: 9px;
     margin-left: 15px;
 }
-section .right .task .tasks .input #btn{
+section .right .task .tasks .input #submit{
     color: #555;
     width: 40px;
     border-radius: 9px;
