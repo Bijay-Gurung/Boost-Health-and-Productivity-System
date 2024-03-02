@@ -1,3 +1,7 @@
+<?php
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,37 +41,33 @@
                 <img src="GIf/Books.gif" height="200px" width="250px">
             </div>
         </div>
-        <div class="right">
-            <div class="task">
-                <p>Task Manager</p>
-                <div class="tasks">
-                    <div class="input">
-                        <form method="POST" action="index.php">
-                            <input type="text" placeholder="search" id="task" name="task">
-                            <button id="btn" name="btn">Add</button>
-                        </form>
 
-                    </div>
-                    <div class="output">
-                        <ul>
-                            <li>Go to Walk</li>
-                            <li>2hrs of Coding</li>
-                            <li>Do Exercise</li>
-                            <li>Take Cold Shower</li>
-                            <li>Take Cold Shower</li>
-                            <li>Take Cold Shower</li>
-                            <li>Take Cold Shower</li>
-                            <li>Take Cold Shower</li>
-                            <li>Take Cold Shower</li>
-                            <li>Take Cold Shower</li>
-                            <li>Take Cold Shower</li>
-                            <li>Take Cold Shower</li>
-                            <li>Take Cold Shower</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?php
+        echo "<div class='right'>";
+            echo"<div class='task'>";
+                echo"<p>Task Manager</p>";
+                echo"<div class='tasks'>";
+                    echo"<div class='input'>";
+                        echo"<form method='POST' action='index.php'>";
+                            echo"<input type='text' placeholder='search' id='task' name='task'>";
+                            echo"<button id='btn' name='btn'>Add</button>";
+                        echo"</form>";
+
+                    echo"</div>";
+                    ?>
+                    <?php
+                    echo"<div class='output'>";
+                        echo"<ul>";
+                            echo"<li>Go to Walk</li>";
+                            echo"<li>2hrs of Coding</li>";
+                            echo"<li>Do Exercise</li>";
+                            echo"<li>Take Cold Shower</li>";
+                        echo"</ul>";
+                    echo"</div>";
+                echo"</div>";
+            echo"</div>";
+        echo"</div>";
+        ?>
     </section>
     <footer>
         <div class="box fitness"></div>
