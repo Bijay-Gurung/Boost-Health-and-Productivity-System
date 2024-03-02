@@ -66,10 +66,10 @@ function displayTime(){
     else if(hrs>=0 && hrs<=3 && session.innerHTML === "Pm"){
         text1.innerHTML = "Good Afternoon";
     }
-    else if(hrs<=4 && hrs<=7 &&session.innerHTML === "Pm"){
+    else if(hrs<=4 && hrs<7 &&session.innerHTML === "Pm"){
         text1.innerHTML = "Good Evening";
     }
-    else if(hrs>=8 && session.innerHTML === "Pm"){
+    else if(hrs>7 && session.innerHTML === "Pm"){
         text1.innerHTML = "Good Night";
     }
 }
