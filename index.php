@@ -26,7 +26,7 @@
     <section>
         <div class="left">
             <div class="goals">
-                <img src="/Images/img/solo.jpg" width="100px" height="200px">
+                <img src="img/solo.jpg" width="100px" height="200px">
                 <button onclick="myGoals()">Goals<i class="fa-solid fa-bullseye" style="color: #ffffff;"></i></button>
             </div>
         </div>
@@ -34,7 +34,7 @@
         <div class="mid">
             <h1><span id="change">|</span> Bijay,<br><span id="changeText">Welcome Back</span></h1>
             <div class="gif">
-                <img src="/Images/GIf/Books.gif" height="200px" width="250px">
+                <img src="GIf/Books.gif" height="200px" width="250px">
             </div>
         </div>
         <div class="right">
@@ -42,7 +42,7 @@
                 <p>Task Manager</p>
                 <div class="tasks">
                     <div class="input">
-                        <form method="POST" action="taskManager.php">
+                        <form method="POST" action="index.php">
                             <input type="text" placeholder="search" id="task" name="task">
                             <button id="btn" name="btn">Add</button>
                         </form>
@@ -75,7 +75,6 @@
         <div class="box tracking"></div>
     </footer>
     <script src="https://kit.fontawesome.com/4f9d824da5.js" crossorigin="anonymous"></script>
-    <script src="/Assets/script.js"></script>
-    <script src="/Assets/taskManager.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

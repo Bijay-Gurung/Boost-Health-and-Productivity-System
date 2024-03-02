@@ -159,17 +159,17 @@ footer .box{
     top: 50px;
 }
 footer .fitness{
-    background-image: url(/Images/Background/Fitness.jpg);
+    background-image: url(Background/Fitness.jpg);
     background-size: cover;
     background-position: center;
 }
 footer .meal{
-    background-image: url(/Images/Background/meal.jpg);
+    background-image: url(Background/meal.jpg);
     background-size: cover;
     background-position: center;
 }
 footer .tracking{
-    background-image: url(/Images/Background/Progress.jpg);
+    background-image: url(Background/Progress.jpg);
     background-size: cover;
     background-position: center;
 }
