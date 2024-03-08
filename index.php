@@ -88,13 +88,31 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
                     echo"</div>";
                     ?>
                     <?php
+                    // Database Configuration
+                    $db_host = 'localhost';
+                    $db_username = 'root';
+                    $db_pass = '';
+                    $db_name = 'taskmanager';
+
+                    // Database connection
+                    $db = new mysqli($db_host,$db_username,$db_pass,$db_name);
+                    
+                    // Check Database Connection
+                    if($db->connect_error){
+                        die("Connection failed" .$db->connect_error);
+                    }
+
+                    $sql = "SELECT * FROM `tasks`";
+                    $result = $db -> query($sql);
                     echo"<div class='output'>";
+                    if($result->num_rows > 0){
                         echo"<ul>";
-                            echo"<li>Go to Walk</li>";
-                            echo"<li>2hrs of Coding</li>";
-                            echo"<li>Do Exercise</li>";
-                            echo"<li>Take Cold Shower</li>";
+                            while($row= $result->fetch_assoc()){
+                                echo"<li>".$row["task"]."</li>";
+                            }
                         echo"</ul>";
+                        echo"";
+                    }
                     echo"</div>";
                 echo"</div>";
             echo"</div>";

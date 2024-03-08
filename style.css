@@ -145,6 +145,11 @@ section .right .task .tasks .output ul{
     padding-top: 15px;
     padding-left: 40px;
 }
+section .right .task .tasks .output ul li{
+    list-style-type: none;
+    padding-top: 5px;
+}
+
 footer{
     display: flex;
 }
