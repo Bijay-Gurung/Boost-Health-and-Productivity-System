@@ -91,7 +91,14 @@ function changingText(){
 changingText();
 setInterval(changingText,3000);
 
+//Task Manager
 function completeTask(){
-    alert("It is clicked if task is complete.");
+    let checkerBox = document.getElementById("check");
+    let task = document.getElementById("tasklist");
+    if(checkerBox.checked){
+        task.style.textDecoration = 'line-through';
+    }else{
+        task.style.textDecoration = 'none';
+    }
 }
 completeTask();

@@ -110,7 +110,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
                             while($row= $result->fetch_assoc()){
                                 echo "<div class='new'>";
                                 echo"<input type='checkbox' id='check' onclick='completeTask()'>";
-                                echo"<li>".$row["task"]."</li>";
+                                echo"<li id='tasklist'>".$row["task"]."</li>";
                                 echo"<button type='submit' id='delete'><i class='fa-solid fa-trash' style='color: #000000;'></i></button>";
                                 echo"<br>";
                                 echo"</div>";
