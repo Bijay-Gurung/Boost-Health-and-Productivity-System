@@ -143,13 +143,23 @@ section .right .task .tasks .output{
 }
 section .right .task .tasks .output ul{
     padding-top: 15px;
-    padding-left: 40px;
+    padding-left: 5px;
+}
+section .right .task .tasks .output ul .new{
+    display: flex;
+    margin-top: 5px;
 }
 section .right .task .tasks .output ul li{
     list-style-type: none;
     padding-top: 5px;
+    font-size: small;
 }
-
+section .right .task .tasks .output ul .new #delete{
+    color: #000;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+}
 footer{
     display: flex;
 }
