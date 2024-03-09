@@ -90,3 +90,8 @@ function changingText(){
 }
 changingText();
 setInterval(changingText,3000);
+
+function completeTask(){
+    alert("It is clicked if task is complete.");
+}
+completeTask();

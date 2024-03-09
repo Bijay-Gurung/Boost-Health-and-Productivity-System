@@ -159,7 +159,12 @@ section .right .task .tasks .output ul .new #delete{
     height: 30px;
     width: 30px;
     border-radius: 15px;
+    margin-left: 5px;
 }
+section .right .task .tasks .output ul .new #check{
+    margin-right: 5px;
+}
+
 footer{
     display: flex;
 }
