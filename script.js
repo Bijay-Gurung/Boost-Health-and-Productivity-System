@@ -92,13 +92,19 @@ changingText();
 setInterval(changingText,3000);
 
 //Task Manager
-function completeTask(){
-    let checkerBox = document.getElementById("check");
-    let task = document.getElementById("tasklist");
+function completeTask(index){
+    let checkerBox = document.getElementById("check"+ index);
+    let task = document.getElementById("tasklist"+ index);
     if(checkerBox.checked){
         task.style.textDecoration = 'line-through';
     }else{
         task.style.textDecoration = 'none';
     }
+    // Storing checkbox state in local storage
+    localStorage.setItem("checkbox"+index,checkerBox.checked);
 }
-completeTask();
+
+// Restoring checkbox state from local storage
+function restoreCheckboxState(){
+    
+}

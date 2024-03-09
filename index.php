@@ -107,10 +107,12 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
                     echo"<div class='output'>";
                     if($result->num_rows > 0){
                         echo"<ul>";
+                        $index = 0; // $index is used to give unique identifier
                             while($row= $result->fetch_assoc()){
+                                $index++;
                                 echo "<div class='new'>";
-                                echo"<input type='checkbox' id='check' onclick='completeTask()'>";
-                                echo"<li id='tasklist'>".$row["task"]."</li>";
+                                echo"<input type='checkbox' id='check$index' onclick='completeTask($index)'>";
+                                echo"<li id='tasklist$index'>".$row["task"]."</li>";
                                 echo"<button type='submit' id='delete'><i class='fa-solid fa-trash' style='color: #000000;'></i></button>";
                                 echo"<br>";
                                 echo"</div>";
